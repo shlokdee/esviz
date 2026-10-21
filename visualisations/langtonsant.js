@@ -101,6 +101,11 @@ function main(){
 
 }
 
+function reset(){
+    ctx.fillStyle="white"
+   ctx.fillRect(0,0,500,500) 
+}
+
 function loop(chunk,caddr,direction){
     if(chunk[caddr]==0){
         chunk[caddr]=1
@@ -145,5 +150,5 @@ function loop(chunk,caddr,direction){
     return [chunk,caddr,direction]
 }
 
-main()
+
 
